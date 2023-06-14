@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function ModalLogin(props) {
   return (
     <div className="enter-container">
-      <Link to="/profile">
+      <Link to="/pomodoro">
         <button className="enter-button">Login</button>
       </Link>
     </div>

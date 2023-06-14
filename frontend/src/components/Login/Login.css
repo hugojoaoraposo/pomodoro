@@ -13,12 +13,16 @@
 
 .username,
 .password {
-    border-radius: 5px;
-    border: none;
-    color: #F4F4F9;
-    background-color: rgba(0, 0, 0, 0.3); /* Example of a semi-transparent black background */
-    margin-bottom: 10px;
-    height: 24px;
+  border-radius: 5px;
+  border: none;
+  color: #F4F4F9;
+  background-color: rgba(0, 0, 0, 0.3); /* Example of a semi-transparent black background */
+  height: 24px;
+  position: relative; /* Set the position property to relative */
+  top: -180px; 
+  padding-left: 30px; 
+  margin: 5px;
+  
 }
 
 ::placeholder{
@@ -26,19 +30,15 @@ color: #F4F4F9;
 }
 
 .input-container {
-    position: relative;
+    position: relative;     
   }
   
   .icon {
     position: absolute;
-    top: 3.5px;
-    left: 8px;
- 
-
-  }
+    bottom:180px;
+    left: 6px;
+    margin: 7px;
+ }
   
-  .username,
-  .password {
-    padding-left: 30px; 
-  }
+
   
