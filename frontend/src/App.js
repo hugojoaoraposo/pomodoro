@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// app.js
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const express = require('express');
+const mongoose = require('mongoose');
+const Pomodoro = require('./pomodoro');
 
-export default App;
+mongoose.connect('mongodb://localhost/pomodoroDB', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+const app = express();
+
+app.use(express.json());
+
+// criando Pomodoro
+app.post('/pomodoros', (req, res) => {
+  const { startTime, endTime, taskName } = req.body;
+
+  const pomodoro = new Pomodoro({
+    startTime,
+    endTime,
+    taskName,
+  });
+
+  pomodoro.save()
+    .then((savedPomodoro) => {
+      res.json(savedPomodoro);
+    })
+    .catch((error) => {
+      res.status(500).json({ error: 'An error occurred' });
+    });
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
