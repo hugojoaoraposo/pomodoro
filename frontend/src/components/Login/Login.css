@@ -1,16 +1,13 @@
-body {
-  background-repeat: no-repeat;
-  background-image: url("../../img/login_background.png");
-  background-size: cover;
- 
-  
-}
+
 
 .login-container {
   display: flex;
   justify-content: center;
   align-items: flex-end; /* Align items to the bottom */
-  height: 75vh; /* Adjust the container height to fill the viewport */
+  height: 100vh; /* Adjust the container height to fill the viewport */
+  background-repeat: no-repeat;
+  background-image: url("../../img/login_background.png");
+  background-size: cover;
 
 }
 
