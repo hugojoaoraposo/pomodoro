@@ -1,27 +1,28 @@
-body {
-  background-repeat: no-repeat;
-  background-image: url("../../img/login_background.png");
-  background-size: cover;
- 
-  
-}
+
 
 .login-container {
   display: flex;
   justify-content: center;
   align-items: flex-end; /* Align items to the bottom */
-  height: 75vh; /* Adjust the container height to fill the viewport */
+  height: 100vh; /* Adjust the container height to fill the viewport */
+  background-repeat: no-repeat;
+  background-image: url("../../img/login_background.png");
+  background-size: cover;
 
 }
 
 .username,
 .password {
-    border-radius: 5px;
-    border: none;
-    color: #F4F4F9;
-    background-color: rgba(0, 0, 0, 0.3); /* Example of a semi-transparent black background */
-    margin-bottom: 10px;
-    height: 24px;
+  border-radius: 5px;
+  border: none;
+  color: #F4F4F9;
+  background-color: rgba(0, 0, 0, 0.3); /* Example of a semi-transparent black background */
+  height: 24px;
+  position: relative; /* Set the position property to relative */
+  top: -180px; 
+  padding-left: 30px; 
+  margin: 5px;
+  
 }
 
 ::placeholder{
@@ -29,19 +30,15 @@ color: #F4F4F9;
 }
 
 .input-container {
-    position: relative;
+    position: relative;     
   }
   
   .icon {
     position: absolute;
-    top: 3.5px;
-    left: 8px;
- 
-
-  }
+    bottom:180px;
+    left: 6px;
+    margin: 7px;
+ }
   
-  .username,
-  .password {
-    padding-left: 30px; 
-  }
+
   

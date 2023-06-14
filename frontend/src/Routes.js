@@ -11,10 +11,11 @@ export default () => {
         <Routes>
             <Route exact path='/' element={<Login />}>
             </Route>
-            <Route exact path="/profile" element={<Profile />}>
-            </Route>
             <Route exact path="/pomodoro" element={<Pomodoro />}>
             </Route>
+            <Route exact path="/profile" element={<Profile />}>
+            </Route>
+       
         </Routes>
     )
 }
