@@ -7,7 +7,8 @@ import PasswordIcon from "../../icons/lock.png";
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [showImage, setShowImage] = useState(true);
+  const [showUsernameIcon, setShowUsernameIcon] = useState(true);
+  const [showPasswordIcon, setShowPasswordIcon] = useState(true);
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -17,12 +18,20 @@ function Login() {
     setPassword(e.target.value);
   };
 
-  const handleInputFocus = () => {
-    setShowImage(false);
+  const handleUsernameFocus = () => {
+    setShowUsernameIcon(false);
   };
 
-  const handleInputBlur = () => {
-    setShowImage(true);
+  const handleUsernameBlur = () => {
+    setShowUsernameIcon(true);
+  };
+
+  const handlePasswordFocus = () => {
+    setShowPasswordIcon(false);
+  };
+
+  const handlePasswordBlur = () => {
+    setShowPasswordIcon(true);
   };
 
   const handleSubmit = (e) => {
@@ -37,33 +46,31 @@ function Login() {
       <div className="login-inputs">
         <form onSubmit={handleSubmit}>
           <div className="input-container">
-            {showImage && <img className="icon" src={UserIcon} alt="User Icon" />}
+            {showUsernameIcon && <img className="icon" src={UserIcon} alt="User Icon" />}
             <input
               className="username"
               type="text"
               id="username"
               value={username}
-              
               onChange={handleUsernameChange}
-              onFocus={handleInputFocus}
-              onBlur={handleInputBlur}
+              onFocus={handleUsernameFocus}
+              onBlur={handleUsernameBlur}
               placeholder="Username"
             />
           </div>
           <div className="input-container">
-            {showImage && <img className="icon" src={PasswordIcon} alt="Password Icon" />}
+            {showPasswordIcon && <img className="icon" src={PasswordIcon} alt="Password Icon" />}
             <input
               className="password"
               type="password"
               id="password"
               value={password}
               onChange={handlePasswordChange}
-              onFocus={handleInputFocus}
-              onBlur={handleInputBlur}
+              onFocus={handlePasswordFocus}
+              onBlur={handlePasswordBlur}
               placeholder="Password"
             />
           </div>
-  
         </form>
         <ModalLogin />
       </div>
