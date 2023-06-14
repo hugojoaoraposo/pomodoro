@@ -1,6 +1,5 @@
-import pic from "../img/pictemp.png";
-import today from "../img/sun.png"
-import week from "../img/Wednesday.png"
+import pic from "../../img/pictemp.png"
+
 
 
 export default function Profile() {

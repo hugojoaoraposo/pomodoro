@@ -1,6 +1,6 @@
-import logo from "../img/logo.png";
-import NavBar from "./Navbar";
-import Timer from "./Timer";
+import logo from "../../../src/img/logo.png";
+import NavBar from "../navbar/Navbar";
+import Timer from "../timer/Timer";
 
 export default function Pomodoro() {
     //ler a rota atual
