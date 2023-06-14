@@ -1,14 +1,16 @@
 import React from "react";
-// import user from "#svg/img/userlogo1.svg";
+
+import user from "../../img/profileicon.png"
+import clock from "../../img/tomato2.png"
+import sound from "../../img/bgmusiclogo.png"
 
 const NavBar = ({selected}) => {
   return (
     <nav className="flex items-center justify-center gap-10  bg-none h-16 text-white fixed bottom-0  w-full">
-      {/* <img src={user} width={24} alt="Logo" /> */}
-      {/* <UserSvg color={selected === "/profile" ? "blue" : "black"}/> */}
-      <span>⏲</span> {/* Replace with pomodoro icon */}
-      <span>🎵</span> {/* Replace with music icon */}
-      <span>⏲</span> {/* Replace with pomodoro icon */}
+     
+      <span><img src={user} width={45}/></span> 
+      <span><img src={clock} width={45}/></span>
+      <span><img src={sound} width={45}/></span> 
 
     </nav>
   );
