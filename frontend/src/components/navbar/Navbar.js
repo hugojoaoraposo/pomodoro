@@ -3,12 +3,12 @@ import React from "react";
 
 const NavBar = ({selected}) => {
   return (
-    <nav className="flex items-center justify-between bg-[#F58282] p-4 text-white fixed bottom-0 z-50 w-full">
+    <nav className="flex items-center justify-center gap-10  bg-none h-16 text-white fixed bottom-0  w-full">
       {/* <img src={user} width={24} alt="Logo" /> */}
       {/* <UserSvg color={selected === "/profile" ? "blue" : "black"}/> */}
-      <span>⏲ user</span> {/* Replace with pomodoro icon */}
-      <span>🎵 Music</span> {/* Replace with music icon */}
-      <span>⏲ Pomodoro</span> {/* Replace with pomodoro icon */}
+      <span>⏲</span> {/* Replace with pomodoro icon */}
+      <span>🎵</span> {/* Replace with music icon */}
+      <span>⏲</span> {/* Replace with pomodoro icon */}
 
     </nav>
   );
