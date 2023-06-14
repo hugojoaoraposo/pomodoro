@@ -1,16 +1,24 @@
-import "./App.css";
-import NavBar from "./components/navbar/Navbar";
-import Pomodoro from "./components/pomodoro/Pomodoro";
-import Profile from "./components/profile/Profile";
 
+
+
+
+
+import { BrowserRouter } from 'react-router-dom'
+import Routes from './Routes'
+import './App.css';
 
 function App() {
   return (
-    <>
-   <Pomodoro/>
+<>
+    <BrowserRouter>
+      <Routes />
+
+    </BrowserRouter>
+<Pomodoro/>
   {/* <Profile /> */}
-  <NavBar/>
-  </>
+  <NavBar/
+</>
+
   );
 }
 
