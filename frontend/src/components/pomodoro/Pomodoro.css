@@ -1,4 +1,10 @@
 .pomodoro-container{
-    background-image: url("../../img/bgstrokes2.png");
+    height: 100vh;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    background-image:url("../../img/other_pages_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
+

@@ -20,6 +20,7 @@
   height: 24px;
   position: relative; /* Set the position property to relative */
   top: -180px; 
+  left: 50px;
   padding-left: 30px; 
   margin: 5px;
   
@@ -36,7 +37,7 @@ color: #F4F4F9;
   .icon {
     position: absolute;
     bottom:180px;
-    left: 6px;
+    left: 55px;
     margin: 7px;
  }
   
