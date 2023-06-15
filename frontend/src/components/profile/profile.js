@@ -1,4 +1,5 @@
 import pic from "../../img/pictemp.png"
+import NavBar from "../navbar/Navbar";
 
 
 
@@ -16,7 +17,8 @@ export default function Profile() {
           </u>
         </div>
       </div>
+      <NavBar pages={"profile"}/>
     </div>
-  );
+  )
 }
 
