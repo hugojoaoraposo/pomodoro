@@ -17,10 +17,10 @@ export default function Pomodoro() {
       </div>
       <div >
         <Timer/>
-        <NavBar />
-        {/* <NavBar selected={
-            //rota atual
-        }/> */}
+
+       
+        <NavBar pages={"pomodoro"} />
+
       </div>
     </div>
   );

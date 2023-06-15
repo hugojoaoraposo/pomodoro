@@ -317,6 +317,22 @@ const Timer = () => {
     }
   }, [minutes, seconds, timerType, cycleCount]);
 
+  const sendCycles = async () => {
+    const res = await fetch("/api/counter", {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(cycleCount),
+    });
+  };
+
+  useEffect(() => {
+    (async () => {
+      await sendCycles();
+    })();
+  }, [cycleCount]);
+
   const updateTime = (time) => {
     if (time < 10) {
       return "0" + time;
@@ -328,7 +344,6 @@ const Timer = () => {
   useEffect(() => {
     setDisplayTime(updateTime(minutes) + ":" + updateTime(seconds));
   }, [minutes, seconds]);
-
 
   const resetTimer = () => {
     setIsActive(false);
@@ -370,16 +385,8 @@ const Timer = () => {
           Long Break
         </button>
       </nav>
-      {/* <CountdownCircle
-        isActive={isActive}
-        setIsActive={setIsActive}
-        initialMinutes={initialMinutes}
-        minutes={minutes}
-        seconds={seconds}
-      /> */}
 
       <div className="flex items-center justify-center  w-[200px] h-[200px] text-2xl font-semibold relative">
-
         <CountdownCircle
           isActive={isActive}
           setIsActive={setIsActive}
@@ -388,7 +395,6 @@ const Timer = () => {
           seconds={seconds}
         />
         <p className="absolute">{displayTime}</p>
-
       </div>
 
       <Counter cycleCount={cycleCount} />
@@ -405,8 +411,6 @@ const Timer = () => {
       >
         Reset
       </button>
-
-     
     </div>
   );
 };
