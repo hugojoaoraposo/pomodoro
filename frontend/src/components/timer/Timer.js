@@ -125,7 +125,7 @@ const Timer = () => {
         >
           Short Break
         </button>
-        <button onClick={() => setCycleCount(4)}>adsasd</button>
+        <button onClick={() => setCycleCount(4)}></button>
         
         <button
           onClick={() => setTimerType("long break")}
