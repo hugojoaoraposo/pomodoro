@@ -7,6 +7,7 @@ import './Profile.css'
 
 export default function Profile() {
   return (
+
 <div className="profile-container">
   <div className="flex flex-col items-center pt-10">
     <img className="rounded-full" src={pic} width={90} alt="Profile Picture" />
@@ -53,4 +54,5 @@ export default function Profile() {
 </div>
  
   );
+
 }
