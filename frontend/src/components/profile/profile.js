@@ -1,6 +1,10 @@
 import pic from "../../img/pictemp.png"
 import NavBar from "../navbar/Navbar";
-
+// import pic from "../../img/gustavosantos.png"
+// import DayIcon from "../../icons/today_icon.png"
+// import WeekIcon from "../../icons/week_icon.png"
+// import MonthIcon from "../../icons/month_icon.png"
+// import './Profile.css'
 
 
 export default function Profile() {
@@ -21,4 +25,3 @@ export default function Profile() {
     </div>
   )
 }
-

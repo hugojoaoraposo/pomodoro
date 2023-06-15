@@ -11,8 +11,8 @@ export default function Pomodoro() {
 
     
   return (
-    <div className=" h-[100vh] pomodoro-container">
-      <div className="flex flex-col pt-14 items-center pb-8">
+    <div className=" h-screen overflow-y-hidden pomodoro-container">
+      <div className="flex flex-col pt-14 items-center overflow-y-hidden pb-8">
         <img src={logo} width={80} alt="Logo" />
       </div>
       <div >
@@ -23,3 +23,4 @@ export default function Pomodoro() {
     </div>
   );
 }
+
