@@ -378,7 +378,7 @@ const Timer = () => {
         seconds={seconds}
       /> */}
 
-      <div className="flex items-center justify-center border rounded-full w-[200px] h-[200px] text-2xl font-semibold relative">
+      <div className="flex items-center justify-center  w-[200px] h-[200px] text-2xl font-semibold relative">
 
         <CountdownCircle
           isActive={isActive}
