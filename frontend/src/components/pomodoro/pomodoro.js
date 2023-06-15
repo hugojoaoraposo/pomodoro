@@ -3,6 +3,7 @@ import NavBar from "../navbar/Navbar";
 import Timer from "../timer/Timer";
 import "./Pomodoro.css"
 
+
 export default function Pomodoro() {
     //ler a rota atual
   return (
@@ -14,6 +15,8 @@ export default function Pomodoro() {
         <Timer/>
         <NavBar pages={"pomodoro"} />
       </div>
+
+
     </div>
   );
 }
