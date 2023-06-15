@@ -18,7 +18,7 @@ export default function Pomodoro() {
       <div >
         <Timer/>
        
-        <NavBar />
+        <NavBar pages={"pomodoro"} />
       </div>
     </div>
   );

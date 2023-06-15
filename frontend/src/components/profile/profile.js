@@ -1,3 +1,4 @@
+
 import pic from "../../img/gustavosantos.png"
 import DayIcon from "../../icons/today_icon.png"
 import WeekIcon from "../../icons/week_icon.png"
@@ -20,7 +21,8 @@ export default function Profile() {
           </u>
         </div>
       </div>
+      <NavBar pages={"profile"}/>
     </div>
-  );
+  )
 }
 
