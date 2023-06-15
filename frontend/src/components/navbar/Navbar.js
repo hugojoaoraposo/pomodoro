@@ -105,13 +105,13 @@ const songs = [
       </div>
   
       {showPopup && (
-        <div className="popup">
-          <h3>Select a background sound:</h3>
+        <div className="popup border border-rose-700 mb-56 flex flex-col justify-center items-center">
+
           <ul>
-            <li><a href="/path/to/sound1.mp3">Sound 1</a></li>
-            <li><a href="/path/to/sound2.mp3">Sound 2</a></li>
-            <li><a href="/path/to/sound3.mp3">Sound 3</a></li>
-            <li><a href="/path/to/sound4.mp3">Sound 4</a></li>
+            <li className='text-black'>{/**<a href="/path/to/sound1.mp3"*>Sound 1</a>*/}Stromy Days</li>
+            <li><a className='text-black' href="/path/to/sound2.mp3">Night Sounds</a></li>
+            <li><a className='text-black' href="/path/to/sound3.mp3">Binaural</a></li>
+            <li><a className='text-black' href="/path/to/sound4.mp3">LoFi Beat</a></li>
           </ul>
         </div>
       )}

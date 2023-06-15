@@ -1,4 +1,6 @@
 
+// THIRD CODE
+
 
 import React, { useState, useEffect } from "react";
 import CountdownCircle from "../countdownCircle/CountdownCircle";
@@ -101,6 +103,7 @@ const Timer = () => {
 
   return (
     <div className="gap-5 flex flex-col items-center justify-between w-screen">
+
       <nav className="flex items-center justify-center space-x-[3px]">
         <button
           onClick={() => setTimerType("pomodoro")}

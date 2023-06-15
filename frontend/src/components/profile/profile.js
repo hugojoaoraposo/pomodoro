@@ -1,4 +1,3 @@
-
 import NavBar from "../../components/navbar/Navbar"
 import pic from "../../img/gustavosantos.png"
 import DayIcon from "../../icons/today_icon.png"
@@ -23,7 +22,6 @@ export default function Profile() {
           </u>
         </div>
       </div>
-      <NavBar pages={"profile"}/>
     </div>
-  )
+  );
 }
