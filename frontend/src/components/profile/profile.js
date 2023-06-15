@@ -1,4 +1,4 @@
-import pic from "../../img/pictemp.png"
+import pic from "../../img/other_pages_bg.png"
 
 
 
