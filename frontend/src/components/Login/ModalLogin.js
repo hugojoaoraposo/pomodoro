@@ -12,6 +12,8 @@ function ModalLogin(props) {
       <Link to="/pomodoro">
         <button className="enter-button">Login</button>
       </Link>
+
+      <span className="forget-password">Forgot password?</span>
     </div>
   );
 }

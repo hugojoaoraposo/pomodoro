@@ -23,3 +23,10 @@
   .enter-button:hover{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
   }
+
+  .forget-password{
+    height: 24px;
+    position: relative;
+    bottom: 140px;
+    right: 120px;
+  }

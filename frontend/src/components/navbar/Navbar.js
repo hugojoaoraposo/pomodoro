@@ -60,8 +60,8 @@ import rain from "../../audio/rain.mp3";
 const NavBar = ({pages}) => {
   const [selected, setSelected] = useState("profile");
   const [showPopup, setShowPopup] = useState(false);
-  const handleClick = () => {
-    setSelected((prevState) => pages);
+  const handleClick = (page) => {
+    setSelected(page);
   };
 
   useEffect(() => {
@@ -90,14 +90,20 @@ const songs = [
 
   return (
     <nav className="flex items-center justify-center gap-10 bg-none h-16 text-white fixed bottom-0 w-full">
-     <Link to="/profile">
-      <div onClick={handleClick}><img src={selected === "profile" ? userdark : user}  width={45}/></div> 
+      <Link to="/profile">
+        <div onClick={() => handleClick("profile")}>
+          <img src={selected === "profile" ? userdark : user} width={45} alt="User Icon" />
+        </div>
       </Link>
       <Link to="/pomodoro">
-      <div onClick={handleClick}><img src={selected === "pomodoro" ? tomatedark : tomatesuave} width={45}/></div>
+        <div onClick={() => handleClick("pomodoro")}>
+          <img src={selected === "pomodoro" ? tomatedark : tomatesuave} width={45} alt="Tomato Icon" />
+        </div>
       </Link>
-      <div onClick={() => setShowPopup(!showPopup)}><img src={sound} width={45}/></div> 
-
+      <div onClick={() => setShowPopup(!showPopup)}>
+        <img src={sound} width={45} alt="Sound Icon" />
+      </div>
+  
       {showPopup && (
         <div className="popup">
           <h3>Select a background sound:</h3>
@@ -107,8 +113,10 @@ const songs = [
             <li><a href="/path/to/sound3.mp3">Sound 3</a></li>
             <li><a href="/path/to/sound4.mp3">Sound 4</a></li>
           </ul>
-
-     <span>
+        </div>
+      )}
+{/*   
+      <span>
         <img
           src={sound}
           width={45}
@@ -124,7 +132,7 @@ const songs = [
           onClick={toggleMute}
         />
       </span>
-
+  
       {currentSongIndex !== null && (
         <audio
           src={songs[currentSongIndex].url}
@@ -133,12 +141,8 @@ const songs = [
           onPause={() => setIsPlaying(false)}
           muted={isMuted}
         />
-
-        </div>
-
-      )}
+      )} */}
     </nav>
-  );
-};
+  )}
 
 export default NavBar;
