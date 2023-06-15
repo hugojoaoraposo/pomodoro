@@ -15,9 +15,6 @@ export default () => {
             <Route exact path="/profile" element={<Profile />}>
             </Route>
 
-            <Route exact path="/pomodoro" element={<Pomodoro />}>
-            </Route>
-
         </Routes>
     )
 } 
