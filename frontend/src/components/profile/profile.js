@@ -21,7 +21,8 @@ export default function Profile() {
             <li>This Month:</li>
           </u>
         </div>
+      <NavBar pages={"profile"} />
       </div>
     </div>
-  );
+  )
 }

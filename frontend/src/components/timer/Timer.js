@@ -104,10 +104,10 @@ const Timer = () => {
   return (
     <div className="gap-5 flex flex-col items-center justify-between w-screen">
 
-      <nav className="flex items-center justify-center space-x-[3px]">
+      <nav className="flex items-center justify-center space-x-[3px] mb-4">
         <button
           onClick={() => setTimerType("pomodoro")}
-          className={`h-8 px-4 rounded-full text-sm font-extralight ${timerType === "pomodoro"
+          className={`h-8 px-4 rounded-xl text-sm font-extralight ${timerType === "pomodoro"
               ? "bg-[#F58282] text-white"
               : "bg-gray-200 text-gray-700"
             }`}
@@ -117,7 +117,7 @@ const Timer = () => {
 
         <button
           onClick={() => setTimerType("break")}
-          className={`h-8 px-4 rounded-full text-sm font-extralight ${timerType === "break"
+          className={`h-8 px-4 rounded-xl text-sm font-extralight ${timerType === "break"
               ? "bg-[#F58282] text-white"
               : "bg-gray-200 text-gray-700"
             }`}
@@ -127,7 +127,7 @@ const Timer = () => {
         
         <button
           onClick={() => setTimerType("long break")}
-          className={`h-8 px-4 rounded-full text-sm font-extralight ${timerType === "long break"
+          className={`h-8 px-4 rounded-xl text-sm font-extralight ${timerType === "long break"
               ? "bg-[#F58282] text-white"
               : "bg-gray-200 text-gray-700"
             }`}
@@ -151,13 +151,13 @@ const Timer = () => {
 
       <button
         onClick={() => setIsActive(!isActive)}
-        className="h-8 px-4 rounded-full text-sm font-extralight bg-[#208A3E] text-[#f4f4f9]"
+        className="h-8  w-20 rounded-xl text-sm font-extralight bg-[#208A3E] text-[#f4f4f9]"
       >
         {isActive ? "Pause" : "Play"}
       </button>
       <button
         onClick={resetTimer}
-        className="h-8 px-4 rounded-full text-sm font-extralight bg-red-500 text-[#f4f4f9]"
+        className="h-8  w-20  rounded-xl text-sm font-extralight bg-red-400 text-[#f4f4f9]"
       >
         Reset
       </button>
