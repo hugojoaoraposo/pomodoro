@@ -1,6 +1,6 @@
 
-
 // THIRD CODE
+
 
 import React, { useState, useEffect } from "react";
 import CountdownCircle from "../countdownCircle/CountdownCircle";
@@ -103,34 +103,34 @@ const Timer = () => {
 
   return (
     <div className="gap-5 flex flex-col items-center justify-between w-screen">
-      <nav className="flex items-center justify-center space-x-[3px] opacity-75 mb-4">
+
+      <nav className="flex items-center justify-center space-x-[3px]">
         <button
           onClick={() => setTimerType("pomodoro")}
-          className={`h-8  px-4 rounded-full text-sm font-extralight ${
-            timerType === "pomodoro"
-              ? "bg-[#F58282]  text-white"
+          className={`h-8 px-4 rounded-full text-sm font-extralight ${timerType === "pomodoro"
+              ? "bg-[#F58282] text-white"
               : "bg-gray-200 text-gray-700"
-          }`}
+            }`}
         >
           Pomodoro
         </button>
+
         <button
           onClick={() => setTimerType("break")}
-          className={`h-8  px-4 rounded-full text-sm font-extralight ${
-            timerType === "break"
+          className={`h-8 px-4 rounded-full text-sm font-extralight ${timerType === "break"
               ? "bg-[#F58282] text-white"
               : "bg-gray-200 text-gray-700"
-          }`}
+            }`}
         >
           Short Break
         </button>
+        
         <button
           onClick={() => setTimerType("long break")}
-          className={`h-8 px-4 text-r rounded-full text-sm font-extralight ${
-            timerType === "long break"
+          className={`h-8 px-4 rounded-full text-sm font-extralight ${timerType === "long break"
               ? "bg-[#F58282] text-white"
               : "bg-gray-200 text-gray-700"
-          }`}
+            }`}
         >
           Long Break
         </button>

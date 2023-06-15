@@ -1,10 +1,73 @@
-.profile-container{
-background-color: #F4F4F9;
-height: 100vh;
-font-family: 'Montserrat';
-font-weight: 900;
-background-image:url("../../img/other_pages_bg.png");
-background-repeat: no-repeat;
-background-size: cover;©
-}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4F4F9;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    background-image:url("../../img/other_pages_bg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right;
+  }
+  
+
+  
+  .rounded-full {
+    border-radius: 50%;
+    position: relative;
+    bottom:100px;
+  }
+
+  .pt-5{
+    position: relative;
+    bottom: 100px;
+  }
+  
+  .space-y-10 {
+    margin-top: -5rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .space-y-10 li {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .today,
+  .week,
+  .month {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+  
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .return-button {
+    background-color: #F4F4F9;
+    border-radius: 4px;
+    width: 70px;
+    color: #F58282;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    height: 24px;
+    position: relative;
+    text-align: center; 
+  }
+  
+  .return-button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
 

@@ -1,11 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-
-
-import Login from './components/login/Login';
-
+import Login from './components/Login/Login';
 import Profile from './components/profile/Profile'
-import Pomodoro from './components/pomodoro/Pomodoro'
+import Pomodoro from './components/pomodoro/pomodoro'
 
 
 export default () => {
