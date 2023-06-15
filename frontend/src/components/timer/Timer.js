@@ -68,12 +68,13 @@ const Timer = () => {
   }, [minutes, seconds, timerType, cycleCount]);
 
   const sendCycles = async () => {
+    console.log("HEY")
     const res = await fetch("/api/counter", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(cycleCount),
+      body: JSON.stringify({value: cycleCount}),
     });
   };
 
@@ -124,6 +125,7 @@ const Timer = () => {
         >
           Short Break
         </button>
+        <button onClick={() => setCycleCount(4)}>adsasd</button>
         
         <button
           onClick={() => setTimerType("long break")}
